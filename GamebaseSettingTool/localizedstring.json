@@ -1,0 +1,38 @@
+{
+    "en": {
+        "localize" : {
+            "CATEGORY_AUTH_NAME":"Auth",
+            "CATEGORY_AUTH_DESC":"Adapter for Auth",
+            "CATEGORY_PURCHASE_NAME":"Purchase",
+            "CATEGORY_PURCHASE_DESC":"Adapter for Purchase",
+            "CATEGORY_PUSH_NAME":"Push",
+            "CATEGORY_PUSH_DESC":"Adapter for Push",
+            "CATEGORY_ETC_NAME":"Etc",
+            "CATEGORY_ETC_DESC":"Adapter for Etc",
+            "EXTRA_ONESTORE_V19_TEXT":"You need to copy the iap_sdk-v19.xx.xx.aar file to the Asset/Plugins/Android folder.",
+            "EXTRA_DESKTOP_WEBVIEW_TEXT":"On macOS, WebView is supported in Unity 2021.3.35f1 and later.",
+            "EXTRA_FACEBOOK_GRAPH_TEXT":"Requires installation of the Facebook SDK for Unity\nFacebook Adapter authentication is replaced by Facebook SDK for Unity authentication.",
+            "EXTRA_FACEBOOK_GRAPH_LINK":"[Install Facebook SDK for Unity]",
+            "EXTRA_FACEBOOK_GRAPH_CHECK_TYPE":"Facebook SDK for Unity",
+            "EXTRA_DOWNLOAD_LINK":"[Download]"
+        }
+    },
+    "ko": {
+        "localize" : {
+            "CATEGORY_AUTH_NAME":"Auth",
+            "CATEGORY_AUTH_DESC":"인증 사용하는 어뎁터",
+            "CATEGORY_PURCHASE_NAME":"Purchase",
+            "CATEGORY_PURCHASE_DESC":"결제에 사용하는 어뎁터",
+            "CATEGORY_PUSH_NAME":"Push",
+            "CATEGORY_PUSH_DESC":"푸쉬에 사용하는 어뎁터",
+            "CATEGORY_ETC_NAME":"Etc",
+            "CATEGORY_ETC_DESC":"별로도 추가하는 유니티 패키지",
+            "EXTRA_ONESTORE_V19_TEXT":"iap_sdk-v19.xx.xx.aar 파일을 Asset/Plugins/Android 폴더에 복사해야 합니다.",
+            "EXTRA_DESKTOP_WEBVIEW_TEXT":"macOS에서는 Unity 2021.3.35f1 이상에서 WebView를 지원합니다.",
+            "EXTRA_FACEBOOK_GRAPH_TEXT":"Facebook SDK for Unity 설치가 필수입니다.\nFacebook Adapter 인증이 Facebook SDK for Unity 인증으로 대체됩니다.",
+            "EXTRA_FACEBOOK_GRAPH_LINK":"[Facebook SDK for Unity 설치]",
+            "EXTRA_FACEBOOK_GRAPH_CHECK_TYPE":"Facebook SDK for Unity",
+            "EXTRA_DOWNLOAD_LINK":"[다운로드]"
+        }
+    }
+}
