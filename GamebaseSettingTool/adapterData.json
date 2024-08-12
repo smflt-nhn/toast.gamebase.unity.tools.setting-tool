@@ -6,7 +6,7 @@
                 "path" : "sdk/gamebase-sdk",
                 "fileName" : "gamebase-sdk",
                 "repositories" : [
-                    "https://raw.githubusercontent.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/feature/setting_tool_3_test/Gamebase/gamebase-sdk.zip"
+                    "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/feature/setting_tool_3_test/Gamebase/gamebase-sdk.zip"
                 ]
             }
         }
@@ -437,7 +437,7 @@
                                 "fileName": "gamebase-adapter-etc-webview",
                                 "version": "2.3.1",
                                 "repositories" : [
-                                    "https://raw.githubusercontent.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/feature/setting_tool_3_test/Gamebase/gamebase-adapter-etc-webview.zip"
+                                    "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/feature/setting_tool_3_test/Gamebase/gamebase-adapter-etc-webview.zip"
                                 ]
                             }
                         },
@@ -478,7 +478,7 @@
                                 "fileName": "gamebase-adapter-auth-facebook",
                                 "version": "2.0.2",
                                 "repositories" : [
-                                    "https://raw.githubusercontent.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/feature/setting_tool_3_test/Gamebase/gamebase-adapter-auth-facebook.zip"
+                                    "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/feature/setting_tool_3_test/Gamebase/gamebase-adapter-auth-facebook.zip"
                                 ]
                             }
                         },
