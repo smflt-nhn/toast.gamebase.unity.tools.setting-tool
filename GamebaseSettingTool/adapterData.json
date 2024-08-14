@@ -15,16 +15,29 @@
         {
             "name" : "Android",
             "path" : "com.toast.android.gamebase:gamebase-sdk",
-            "runEvent" : {
-                "type" : "GooglePlayServices.PlayServicesResolver,Google.JarResolver"
-            }
+            "runEvents" : [
+                {
+                    "type" : "check_type",
+                    "typeName" : "GooglePlayServices.PlayServicesResolver,Google.JarResolver"
+                },
+                {
+                    "type" : "run",
+                    "typeName" : "GooglePlayServices.PlayServicesResolver,Google.JarResolver",
+                    "methodName" : "ResolveSync",
+                    "parameters" : [ true ]
+                }
+            ]
         },
         {
             "name" : "iOS",
             "path" : "Gamebase",
-            "runEvent" : {
-                "type" : "Google.IOSResolver,Google.IOSResolver"
-            }
+            "runEvents" : [
+                {
+                    "type" : "check_type",
+                    "typeName" : "Google.IOSResolver,Google.IOSResolver",
+                    "methodName" : "AutoInstallCocoapods"
+                }
+            ]
         },
         {
             "name" : "Windows"
