@@ -3,10 +3,17 @@
         {
             "name" : "Gamebase",
             "install" : {
-                "path" : "sdk/gamebase-sdk",
-                "fileName" : "gamebase-sdk",
+                "dirs" : [
+                    "sdk/gamebase-sdk",
+                    "sdk/gamebase-adapter-etc-webview",
+                    "sdk/gamebase-adapter-auth-facebook"
+                ],
+                "name" : "gamebase-sdk",
                 "repositories" : [
-                    "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/feature/setting_tool_3_test/Gamebase/gamebase-sdk.zip"
+                    "https://static.toastoven.net/toastcloud/sdk_download/gamebase/v{version}/GamebaseSDK-Unity.zip"
+                ],
+                "packages" : [
+                    "sdk/gamebase-sdk"
                 ]
             }
         }
@@ -14,7 +21,9 @@
     "platforms" : [
         {
             "name" : "Android",
-            "path" : "com.toast.android.gamebase:gamebase-sdk",
+            "install" : {
+                "name" : "com.toast.android.gamebase:gamebase-sdk"
+            },
             "runEvents" : [
                 {
                     "type" : "check_type",
@@ -30,7 +39,9 @@
         },
         {
             "name" : "iOS",
-            "path" : "Gamebase",
+            "install" : {
+                "name" : "Gamebase"
+            },
             "runEvents" : [
                 {
                     "type" : "check_type",
@@ -43,7 +54,7 @@
             "name" : "Windows"
         },
         {
-            "name" : "MacOS"
+            "name" : "macOS"
         }
     ],
     "categorys" : [
@@ -59,13 +70,13 @@
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-auth-facebook"
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-facebook"
                             }
                         },
                         {
                             "name" : "iOS",
                             "install" : {
-                                "fileName" : "GamebaseAuthFacebookAdapter"
+                                "name" : "GamebaseAuthFacebookAdapter"
                             }
                         }
                     ]
@@ -77,13 +88,13 @@
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-auth-google"
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-google"
                             }
                         },
                         {
                             "name" : "iOS",
                             "install" : {
-                                "fileName" : "GamebaseAuthGoogleAdapter"
+                                "name" : "GamebaseAuthGoogleAdapter"
                             }
                         }
                     ]
@@ -95,25 +106,25 @@
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-auth-gpgs-v2"
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-gpgs-v2"
                             }
                         }
                     ]
                 },
                 {
                     "name" : "Naver",
-                    "displayName": "Naver",
+                    "displayName": "NAVER",
                     "platforms" : [
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-auth-naver"
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-naver"
                             }
                         },
                         {
                             "name" : "iOS",
                             "install" : {
-                                "fileName" : "GamebaseAuthNaverAdapter"
+                                "name" : "GamebaseAuthNaverAdapter"
                             }
                         }
                     ]
@@ -125,49 +136,49 @@
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-auth-twitter"
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-twitter"
                             }
                         },
                         {
                             "name" : "iOS",
                             "install" : {
-                                "fileName" : "GamebaseAuthTwitterAdapter"
+                                "name" : "GamebaseAuthTwitterAdapter"
                             }
                         }
                     ]
                 },
                 {
                     "name" : "Line",
-                    "displayName": "Line",
+                    "displayName": "LINE",
                     "platforms" : [
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-auth-line"
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-line"
                             }
                         },
                         {
                             "name" : "iOS",
                             "install" : {
-                                "fileName" : "GamebaseAuthLineAdapter"
+                                "name" : "GamebaseAuthLineAdapter"
                             }
                         }
                     ]
                 },
                 {
                     "name" : "AppleId",
-                    "displayName": "AppleId",
+                    "displayName": "Sign In with Apple",
                     "platforms" : [
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-auth-appleid"
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-appleid"
                             }
                         },
                         {
                             "name" : "iOS",
                             "install" : {
-                                "fileName" : "GamebaseAuthAppleidAdapter"
+                                "name" : "GamebaseAuthAppleidAdapter"
                             }
                         }
                     ]
@@ -179,43 +190,77 @@
                         {
                             "name": "Android",
                             "install" : {
-                                "fileName": "com.toast.android.gamebase:gamebase-adapter-auth-weibo"
+                                "name": "com.toast.android.gamebase:gamebase-adapter-auth-weibo"
                             }
                         },
                         {
                             "name": "iOS",
                             "install" : {
-                                "fileName": "GamebaseAuthWeiboAdapter"
+                                "name": "GamebaseAuthWeiboAdapter"
                             }
                         }
                     ]
                 },
                 {
                     "name" : "Payco",
-                    "displayName": "Payco",
+                    "displayName": "PAYCO",
                     "platforms" : [
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-auth-payco"
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-payco"
                             }
                         },
                         {
                             "name" : "iOS",
                             "install" : {
-                                "fileName" : "GamebaseAuthPaycoAdapter"
+                                "name" : "GamebaseAuthPaycoAdapter"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name" : "Steam",
+                    "displayName": "Steam",
+                    "extras" : [
+                        {
+                            "platform" : "Android",
+                            "type" : "check_sdk_version",
+                            "text" : "EXTRA_MIN_ANDROID_SDK_25_TEXT",
+                            "value" : "25"
+                        },
+                        {
+                            "platform" : "iOS",
+                            "type" : "check_sdk_version",
+                            "text" : "EXTRA_MIN_IOS_SDK_14_TEXT",
+                            "value" : "14"
+                        }
+                    ],
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "minGamebaseVersion" : "2.67.0",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-steam"
+                            }
+                        },
+                        {
+                            "name" : "iOS",
+                            "minGamebaseVersion" : "2.67.0",
+                            "install" : {
+                                "name" : "GamebaseAuthSteamAdapter"
                             }
                         }
                     ]
                 },
                 {
                     "name" : "Gamecenter",
-                    "displayName": "Gamecenter",
+                    "displayName": "Apple Game Center",
                     "platforms" : [
                         {
                             "name" : "iOS",
                             "install" : {
-                                "fileName" : "GamebaseAuthGamecenterAdapter"
+                                "name" : "GamebaseAuthGamecenterAdapter"
                             }
                         }
                     ]
@@ -229,19 +274,19 @@
             "adapters" : [
                 {
                     "name": "IapGoogle",
-                    "displayName": "Google",
+                    "displayName": "Google Play",
                     "platforms" : [
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-purchase-google"
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-google"
                             }
                         }
                     ]
                 },
                 {
                     "name": "IapOnestore",
-                    "displayName": "Onestore",
+                    "displayName": "One store",
                     "types" : [
                         {
                             "name": "IapOnestoreV17",
@@ -250,7 +295,7 @@
                                 {
                                     "name" : "Android",
                                     "install" : {
-                                        "fileName" : "com.toast.android.gamebase:gamebase-adapter-purchase-onestore"
+                                        "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-onestore"
                                     }
                                 }
                             ]
@@ -273,7 +318,7 @@
                                 {
                                     "name" : "Android",
                                     "install" : {
-                                        "fileName" : "com.toast.android.gamebase:gamebase-adapter-purchase-onestore-v19"
+                                        "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-onestore-v19"
                                     }
                                 }
                             ]
@@ -285,7 +330,7 @@
                                 {
                                     "name" : "Android",
                                     "install" : {
-                                        "fileName" : "com.toast.android.gamebase:gamebase-adapter-purchase-onestore-v21",
+                                        "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-onestore-v21",
                                         "repositories" : [
                                             "https://repo.onestore.co.kr/repository/onestore-sdk-public"
                                         ]
@@ -300,7 +345,7 @@
                                 {
                                     "name" : "Android",
                                     "install" : {
-                                        "fileName" : "com.toast.android.gamebase:gamebase-adapter-purchase-onestore-external"
+                                        "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-onestore-external"
                                     }
                                 }
                             ]
@@ -309,12 +354,12 @@
                 },
                 {
                     "name": "IapGalaxy",
-                    "displayName": "Galaxy",
+                    "displayName": "Galaxy Store",
                     "platforms" : [
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-purchase-galaxy"
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-galaxy"
                             }
                         }
                     ]
@@ -326,7 +371,7 @@
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-purchase-amazon"
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-amazon"
                             }
                         }
                     ]
@@ -338,7 +383,7 @@
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-purchase-huawei",
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-huawei",
                                 "repositories" : [
                                     "https://developer.huawei.com/repo/"
                                 ]
@@ -353,19 +398,19 @@
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-purchase-mycard"
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-mycard"
                             }
                         }
                     ]
                 },
                 {
                     "name": "IapAppStore",
-                    "displayName": "AppStore",
+                    "displayName": "App Store",
                     "platforms" : [
                         {
                             "name" : "iOS",
                             "install" : {
-                                "fileName" : "GamebasePurchaseIAPAdapter"
+                                "name" : "GamebasePurchaseIAPAdapter"
                             }
                         }
                     ]
@@ -384,7 +429,7 @@
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-push-fcm"
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-push-fcm"
                             }
                         }
                     ]
@@ -396,7 +441,7 @@
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-push-adm"
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-push-adm"
                             }
                         }
                     ]
@@ -408,7 +453,7 @@
                         {
                             "name" : "Android",
                             "install" : {
-                                "fileName" : "com.toast.android.gamebase:gamebase-adapter-push-notification"
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-push-notification"
                             }
                         }
                     ]
@@ -420,7 +465,7 @@
                         {
                             "name" : "iOS",
                             "install" : {
-                                "fileName" : "GamebasePushAdapter"
+                                "name" : "GamebasePushAdapter"
                             }
                         }
                     ]
@@ -437,8 +482,10 @@
                     "displayName": "Desktop WebView",
                     "extras" : [
                         {
-                            "type" : "text",
-                            "text" : "EXTRA_DESKTOP_WEBVIEW_TEXT"
+                            "platform" : "macOS",
+                            "type" : "check_unity_version",
+                            "text" : "EXTRA_DESKTOP_WEBVIEW_MACOS_MINVERSION_TEXT",
+                            "value" : "2021.3.35"
                         }
                     ],
                     "unity": true,
@@ -446,11 +493,15 @@
                         {
                             "name": "Unity",
                             "install" : {
-                                "path": "sdk/gamebase-adapter-etc-webview",
-                                "fileName": "gamebase-adapter-etc-webview",
-                                "version": "2.3.1",
+                                "dirs": [
+                                    "sdk/gamebase-adapter-etc-webview"
+                                ],
+                                "name": "gamebase-adapter-etc-webview",
                                 "repositories" : [
-                                    "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/feature/setting_tool_3_test/Gamebase/gamebase-adapter-etc-webview.zip"
+                                    "https://static.toastoven.net/toastcloud/sdk_download/gamebase/v{version}/GamebaseSDK-Unity.zip"
+                                ],
+                                "packages" : [
+                                    "sdk/gamebase-adapter-etc-webview"
                                 ]
                             }
                         },
@@ -458,7 +509,7 @@
                             "name": "Windows"
                         },
                         {
-                            "name": "MacOS"
+                            "name": "macOS"
                         }
                     ]
                 },
@@ -487,11 +538,15 @@
                         {
                             "name": "Unity",
                             "install" : {
-                                "path" : "sdk/gamebase-adapter-auth-facebook",
-                                "fileName": "gamebase-adapter-auth-facebook",
-                                "version": "2.0.2",
+                                "dirs" : [
+                                    "sdk/gamebase-adapter-auth-facebook"
+                                ],
+                                "name": "gamebase-adapter-auth-facebook",
                                 "repositories" : [
-                                    "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/feature/setting_tool_3_test/Gamebase/gamebase-adapter-auth-facebook.zip"
+                                    "https://static.toastoven.net/toastcloud/sdk_download/gamebase/v{version}/GamebaseSDK-Unity.zip"
+                                ],
+                                "packages" : [
+                                    "sdk/gamebase-adapter-auth-facebook"
                                 ]
                             }
                         },
