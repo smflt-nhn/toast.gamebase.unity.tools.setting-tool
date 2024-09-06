@@ -286,7 +286,7 @@
                 },
                 {
                     "name": "IapOnestore",
-                    "displayName": "One store",
+                    "displayName": "One Store",
                     "types" : [
                         {
                             "name": "IapOnestoreV17",
