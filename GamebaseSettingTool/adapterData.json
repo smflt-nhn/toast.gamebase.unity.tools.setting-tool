@@ -66,6 +66,16 @@
                 {
                     "name": "Facebook",
                     "displayName": "Facebook",
+
+                    "extras" : [
+                        {
+                            "platform" : "Android",
+                            "type" : "link",
+                            "text" : "SETTING_GUIDE",
+                            "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#facebook-idp"
+                        }
+                    ],
+                    
                     "platforms" : [
                         {
                             "name" : "Android",
@@ -102,6 +112,20 @@
                 {
                     "name" : "GPGS_V2",
                     "displayName": "GPGS_V2",
+                    "extras" : [
+                        {
+                            "platform" : "Android",
+                            "type" : "check_sdk_version",
+                            "text" : "EXTRA_MIN_ANDROID_SDK_21_TEXT",
+                            "value" : "21"
+                        },
+                        {
+                            "platform" : "Android",
+                            "type" : "link",
+                            "text" : "SETTING_GUIDE",
+                            "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#gpgs-v2-idp"
+                        }
+                    ],
                     "platforms" : [
                         {
                             "name" : "Android",
@@ -114,6 +138,14 @@
                 {
                     "name" : "Naver",
                     "displayName": "NAVER",
+                    "extras" : [
+                        {
+                            "platform" : "Android",
+                            "type" : "check_sdk_version",
+                            "text" : "EXTRA_MIN_ANDROID_SDK_21_TEXT",
+                            "value" : "21"
+                        }
+                    ],
                     "platforms" : [
                         {
                             "name" : "Android",
@@ -132,6 +164,14 @@
                 {
                     "name" : "Twitter",
                     "displayName": "Twitter",
+                    "extras" : [
+                        {
+                            "platform" : "Android",
+                            "type" : "check_sdk_version",
+                            "text" : "EXTRA_MIN_ANDROID_SDK_21_TEXT",
+                            "value" : "21"
+                        }
+                    ],
                     "platforms" : [
                         {
                             "name" : "Android",
@@ -186,6 +226,14 @@
                 {
                     "name": "Weibo",
                     "displayName": "Weibo",
+                    "extras" : [
+                        {
+                            "platform" : "Android",
+                            "type" : "link",
+                            "text" : "SETTING_GUIDE",
+                            "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#weibo-idp"
+                        }
+                    ],
                     "platforms": [
                         {
                             "name": "Android",
@@ -326,6 +374,14 @@
                         {
                             "name": "IapOnestoreV21",
                             "displayName": "V21",
+                            "extras" : [
+                                {
+                                    "platform" : "Android",
+                                    "type" : "check_sdk_version",
+                                    "text" : "EXTRA_MIN_ANDROID_SDK_23_TEXT",
+                                    "value" : "23"
+                                }
+                            ],
                             "platforms" : [
                                 {
                                     "name" : "Android",
@@ -355,6 +411,14 @@
                 {
                     "name": "IapGalaxy",
                     "displayName": "Galaxy Store",
+                    "extras" : [
+                        {
+                            "platform" : "Android",
+                            "type" : "check_sdk_version",
+                            "text" : "EXTRA_MIN_ANDROID_SDK_21_TEXT",
+                            "value" : "21"
+                        }
+                    ],
                     "platforms" : [
                         {
                             "name" : "Android",
@@ -381,6 +445,13 @@
                     "displayName": "Huawei",
                     "platforms" : [
                         {
+                            "extras" : [
+                                {
+                                    "type" : "link",
+                                    "text" : "SETTING_GUIDE",
+                                    "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#huawei-store"
+                                }
+                            ],
                             "name" : "Android",
                             "install" : {
                                 "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-huawei",
@@ -394,6 +465,19 @@
                 {
                     "name": "IapMyCard",
                     "displayName": "MyCard",
+                    "extras" : [
+                        {
+                            "platform" : "Android",
+                            "type" : "check_sdk_version",
+                            "text" : "EXTRA_MIN_ANDROID_SDK_21_TEXT",
+                            "value" : "21"
+                        },
+                        {
+                            "type" : "link",
+                            "text" : "SETTING_GUIDE",
+                            "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#mycard"
+                        }
+                    ],
                     "platforms" : [
                         {
                             "name" : "Android",
@@ -425,6 +509,13 @@
                 {
                     "name" : "FCM",
                     "displayName": "FCM",
+                    "extras" : [
+                        {
+                            "type" : "link",
+                            "text" : "SETTING_GUIDE",
+                            "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#firebase-notification"
+                        }
+                    ],
                     "platforms" : [
                         {
                             "name" : "Android",
