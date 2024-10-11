@@ -20,13 +20,6 @@
                                 {
                                     "type": "nodeValue",
                                     "platform": "Android",
-                                    "key": "android:launchMode",
-                                    "value": "singleTask",
-                                    "message": "MESSAGE_ANDROID_MANIFEST_DONT_HAVE_LAUNCHMODE"
-                                },
-                                {
-                                    "type": "nodeValue",
-                                    "platform": "Android",
                                     "key": "android:exported",
                                     "value": "true",
                                     "message": "MESSAGE_ANDROID_MANIFEST_DONT_HAVE_EXPORTED"
