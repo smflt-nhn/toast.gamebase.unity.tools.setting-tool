@@ -21,6 +21,7 @@
     "platforms" : [
         {
             "name" : "Android",
+            "buildTargetName" : "Android",
             "install" : {
                 "name" : "com.toast.android.gamebase:gamebase-sdk"
             },
@@ -39,6 +40,7 @@
         },
         {
             "name" : "iOS",
+            "buildTargetName" : "iOS",
             "install" : {
                 "name" : "Gamebase"
             },
@@ -202,6 +204,14 @@
                 {
                     "name" : "Line",
                     "displayName": "LINE",
+                    "extras" : [
+                        {
+                            "platform" : "iOS",
+                            "type" : "check_sdk_version",
+                            "text" : "EXTRA_MIN_IOS_SDK_13_TEXT",
+                            "value" : "13"
+                        }
+                    ],
                     "platforms" : [
                         {
                             "name" : "Android",
