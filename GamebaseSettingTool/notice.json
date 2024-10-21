@@ -1,37 +1,5 @@
 {
     "noticeList": 
     [
-        {
-            "platform": "unity",
-            "minVersion": "2.66.0",
-            "maxVersion": "2.66.2",
-            "message": "유니티 2.66.0 - 2.66.2 노출",
-            "linkText": "링크",
-            "linkUrl": "test"
-        },
-        {
-            "platform": "unity",
-            "minVersion": "2.65.1",
-            "maxVersion": "2.66.1",
-            "message": "유니티 2.65.1 - 2.66.1 노출"
-        },
-        {
-            "platform": "android",
-            "minVersion": "2.66.1",
-            "maxVersion": "2.66.2",
-            "message": "android 2.66.1 - 2.66.2 노출"
-        },
-        {
-            "platform": "iOS",
-            "minVersion": "2.66.0",
-            "maxVersion": "2.66.1",
-            "message": "ios 2.66.0 - 2.66.1 노출"
-        },
-        {
-            "message": "NOTICE_LOCAL",
-            "linkText": "LINK_LOCAL",
-            "linkUrl": "LINK_LOCAL_URL"
-        }
-        
     ]
 }
