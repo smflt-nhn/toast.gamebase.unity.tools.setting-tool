@@ -569,7 +569,7 @@
                         },
                         {
                             "type" : "link",
-                            "text" : "EXTRA_FCM_LINKSETTING_GUIDE",
+                            "text" : "SETTING_GUIDE",
                             "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#firebase-notification"
                         }
                     ],
