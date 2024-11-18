@@ -1,23 +1,25 @@
 {
-    "packages" : [
-        {
-            "name" : "Gamebase",
-            "install" : {
-                "dirs" : [
-                    "sdk/gamebase-sdk",
-                    "sdk/gamebase-adapter-etc-webview",
-                    "sdk/gamebase-adapter-auth-facebook"
-                ],
-                "name" : "gamebase-sdk",
-                "repositories" : [
-                    "https://static.toastoven.net/toastcloud/sdk_download/gamebase/v{version}/GamebaseSDK-Unity.zip"
-                ],
-                "packages" : [
-                    "sdk/gamebase-sdk"
-                ]
+    "packageInfo":
+    {
+        "versionPath" : "https://raw.githubusercontent.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-sdk/v{version}/packageVersion.json",
+        "packages" : [
+            {
+                "name" : "Gamebase",
+                "install" : {
+                    "dirs" : [
+                        "sdk/gamebase-sdk"
+                    ],
+                    "name" : "gamebase-sdk",
+                    "repositories" : [
+                        "https://raw.githubusercontent.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-sdk/v{version}/gamebase-sdk.zip"
+                    ],
+                    "packages" : [
+                        "sdk/gamebase-sdk"
+                    ]
+                }
             }
-        }
-    ],
+        ]
+    },
     "platforms" : [
         {
             "name" : "Android",
@@ -68,7 +70,6 @@
                 {
                     "name": "Facebook",
                     "displayName": "Facebook",
-
                     "extras" : [
                         {
                             "platform" : "Android",
@@ -81,6 +82,24 @@
                             "type" : "link",
                             "text" : "SETTING_GUIDE",
                             "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#facebook-idp"
+                        },
+                        {
+                            "platform" : "Windows",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_MACOS_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_unity_version",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
+                            "value" : "2021.3.35"
                         }
                     ],
                     
@@ -96,12 +115,41 @@
                             "install" : {
                                 "name" : "GamebaseAuthFacebookAdapter"
                             }
+                        },
+                        {
+                            "name" : "Windows",
+                            "include": ["WebView"]
+                        },
+                        {
+                            "name" : "macOS",
+                            "minGamebaseVersion" : "2.63.0",
+                            "include": ["WebView"]
                         }
                     ]
                 },
                 {
                     "name" : "Google",
                     "displayName": "Google",
+                    "extras" : [
+                        {
+                            "platform" : "Windows",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_MACOS_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_unity_version",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
+                            "value" : "2021.3.35"
+                        }
+                    ],
                     "platforms" : [
                         {
                             "name" : "Android",
@@ -114,6 +162,15 @@
                             "install" : {
                                 "name" : "GamebaseAuthGoogleAdapter"
                             }
+                        },
+                        {
+                            "name" : "Windows",
+                            "include": ["WebView"]
+                        },
+                        {
+                            "name" : "macOS",
+                            "minGamebaseVersion" : "2.63.0",
+                            "include": ["WebView"]
                         }
                     ]
                 },
@@ -143,6 +200,7 @@
                     "platforms" : [
                         {
                             "name" : "Android",
+                            "minGamebaseVersion" : "2.66.0",
                             "install" : {
                                 "name" : "com.toast.android.gamebase:gamebase-adapter-auth-gpgs-v2"
                             }
@@ -158,6 +216,24 @@
                             "type" : "check_sdk_version",
                             "text" : "EXTRA_MIN_ANDROID_SDK_21_TEXT",
                             "value" : "21"
+                        },
+                        {
+                            "platform" : "Windows",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_MACOS_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_unity_version",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
+                            "value" : "2021.3.35"
                         }
                     ],
                     "platforms" : [
@@ -172,6 +248,15 @@
                             "install" : {
                                 "name" : "GamebaseAuthNaverAdapter"
                             }
+                        },
+                        {
+                            "name" : "Windows",
+                            "include": ["WebView"]
+                        },
+                        {
+                            "name" : "macOS",
+                            "minGamebaseVersion" : "2.63.0",
+                            "include": ["WebView"]
                         }
                     ]
                 },
@@ -184,6 +269,24 @@
                             "type" : "check_sdk_version",
                             "text" : "EXTRA_MIN_ANDROID_SDK_21_TEXT",
                             "value" : "21"
+                        },
+                        {
+                            "platform" : "Windows",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_MACOS_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_unity_version",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
+                            "value" : "2021.3.35"
                         }
                     ],
                     "platforms" : [
@@ -198,6 +301,15 @@
                             "install" : {
                                 "name" : "GamebaseAuthTwitterAdapter"
                             }
+                        },
+                        {
+                            "name" : "Windows",
+                            "include": ["WebView"]
+                        },
+                        {
+                            "name" : "macOS",
+                            "minGamebaseVersion" : "2.63.0",
+                            "include": ["WebView"]
                         }
                     ]
                 },
@@ -210,6 +322,24 @@
                             "type" : "check_sdk_version",
                             "text" : "EXTRA_MIN_IOS_SDK_13_TEXT",
                             "value" : "13"
+                        },
+                        {
+                            "platform" : "Windows",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_MACOS_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_unity_version",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
+                            "value" : "2021.3.35"
                         }
                     ],
                     "platforms" : [
@@ -224,6 +354,15 @@
                             "install" : {
                                 "name" : "GamebaseAuthLineAdapter"
                             }
+                        },
+                        {
+                            "name" : "Windows",
+                            "include": ["WebView"]
+                        },
+                        {
+                            "name" : "macOS",
+                            "minGamebaseVersion" : "2.63.0",
+                            "include": ["WebView"]
                         }
                     ]
                 },
@@ -284,6 +423,26 @@
                 {
                     "name" : "Payco",
                     "displayName": "PAYCO",
+                    "extras" : [
+                        {
+                            "platform" : "Windows",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_MACOS_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_unity_version",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
+                            "value" : "2021.3.35"
+                        }
+                    ],
                     "platforms" : [
                         {
                             "name" : "Android",
@@ -296,6 +455,15 @@
                             "install" : {
                                 "name" : "GamebaseAuthPaycoAdapter"
                             }
+                        },
+                        {
+                            "name" : "Windows",
+                            "include": ["WebView"]
+                        },
+                        {
+                            "name" : "macOS",
+                            "minGamebaseVersion" : "2.63.0",
+                            "include": ["WebView"]
                         }
                     ]
                 },
@@ -595,20 +763,8 @@
                     ]
                 },
                 {
-                    "name" : "CustomReceiver",
-                    "displayName": "CustomReceiver",
-                    "platforms" : [
-                        {
-                            "name" : "Android",
-                            "install" : {
-                                "name" : "com.toast.android.gamebase:gamebase-adapter-push-notification"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name" : "APNS",
-                    "displayName": "APNS",
+                    "name" : "APNs",
+                    "displayName": "APNs",
                     "platforms" : [
                         {
                             "name" : "iOS",
@@ -621,13 +777,13 @@
             ]
         },
         {
-            "name" : "etc",
-            "displayName" : "CATEGORY_ETC_NAME",
-            "description" : "CATEGORY_ETC_DESC",
+            "name" : "addon",
+            "displayName" : "CATEGORY_ADDON_NAME",
+            "description" : "CATEGORY_ADDON_DESC",
             "adapters": [
                 {
                     "name": "WebView",
-                    "displayName": "Desktop WebView",
+                    "displayName": "WebView for PC",
                     "extras" : [
                         {
                             "platform" : "macOS",
@@ -636,17 +792,17 @@
                             "value" : "2021.3.35"
                         }
                     ],
-                    "unity": true,
                     "platforms": [
                         {
-                            "name": "Unity",
+                            "name": "Windows",
                             "install" : {
                                 "dirs": [
                                     "sdk/gamebase-adapter-etc-webview"
                                 ],
                                 "name": "gamebase-adapter-etc-webview",
                                 "repositories" : [
-                                    "https://static.toastoven.net/toastcloud/sdk_download/gamebase/v{version}/GamebaseSDK-Unity.zip"
+                                    "https://raw.githubusercontent.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_core.zip",
+                                    "https://raw.githubusercontent.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_windows.zip"
                                 ],
                                 "packages" : [
                                     "sdk/gamebase-adapter-etc-webview"
@@ -654,55 +810,33 @@
                             }
                         },
                         {
-                            "name": "Windows"
-                        },
-                        {
-                            "name": "macOS"
+                            "name": "macOS",
+                            "minGamebaseVersion" : "2.63.0",
+                            "install" : {
+                                "dirs": [
+                                    "sdk/gamebase-adapter-etc-webview"
+                                ],
+                                "name": "gamebase-adapter-etc-webview",
+                                "repositories" : [
+                                    "https://raw.githubusercontent.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_core.zip",
+                                    "https://raw.githubusercontent.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_mac.zip"
+                                ],
+                                "packages" : [
+                                    "sdk/gamebase-adapter-etc-webview"
+                                ]
+                            }
                         }
                     ]
                 },
                 {
-                    "name": "GraphApi",
-                    "displayName": "Facebook GraphApi",
-                    "extras" : [
+                    "name" : "CustomReceiver",
+                    "displayName": "Custom Push Receiver",
+                    "platforms" : [
                         {
-                            "type" : "text",
-                            "text" : "EXTRA_FACEBOOK_GRAPH_TEXT"
-                        },
-                        {
-                            "type" : "link",
-                            "text" : "EXTRA_FACEBOOK_GRAPH_LINK",
-                            "value" : "https://developers.facebook.com/docs/unity/"
-                        },
-                        {
-                            "type" : "check_type",
-                            "text" : "EXTRA_FACEBOOK_GRAPH_CHECK_TYPE",
-                            "value" : "Facebook.Unity.FB,Facebook.Unity"
-                        }
-                    ],
-                    "unity": true,
-                    "exclude": ["Facebook"],
-                    "platforms": [
-                        {
-                            "name": "Unity",
+                            "name" : "Android",
                             "install" : {
-                                "dirs" : [
-                                    "sdk/gamebase-adapter-auth-facebook"
-                                ],
-                                "name": "gamebase-adapter-auth-facebook",
-                                "repositories" : [
-                                    "https://static.toastoven.net/toastcloud/sdk_download/gamebase/v{version}/GamebaseSDK-Unity.zip"
-                                ],
-                                "packages" : [
-                                    "sdk/gamebase-adapter-auth-facebook"
-                                ]
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-push-notification"
                             }
-                        },
-                        {
-                            "name": "Android"
-                        },
-                        {
-                            "name": "iOS"
                         }
                     ]
                 }

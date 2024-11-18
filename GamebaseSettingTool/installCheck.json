@@ -5,24 +5,60 @@
             "platform": "Android",
             "checkList": [
                 {
-                    "type" : "checkXmlFile",
-                    "path" : "Plugins/Android/AndroidManifest.xml",
-                    "message" : "MESSAGE_ANDROID_MANIFEST_DONT_HAVE",
+                    "type" : "checkActivity",
+                    "value" : "true",
                     "childs" : [
                         {
-                            "type" : "findNode",
-                            "platform" : "Android",
-                            "path" : "/manifest/application/activity",
-                            "key" : "android:name",
-                            "value" : "com.toast.android.gamebase.activity.GamebaseMainActivity",
-                            "message" : "MESSAGE_ANDROID_MANIFEST_DONT_HAVE_ACTIVITY",
+                            "type" : "checkXmlFile",
+                            "path" : "Plugins/Android/AndroidManifest.xml",
+                            "message" : "MESSAGE_ANDROID_MANIFEST_DONT_HAVE",
                             "childs" : [
                                 {
-                                    "type": "nodeValue",
-                                    "platform": "Android",
-                                    "key": "android:exported",
-                                    "value": "true",
-                                    "message": "MESSAGE_ANDROID_MANIFEST_DONT_HAVE_EXPORTED"
+                                    "type" : "findNode",
+                                    "platform" : "Android",
+                                    "path" : "/manifest/application/activity",
+                                    "key" : "android:name",
+                                    "value" : "com.toast.android.gamebase.activity.GamebaseMainActivity",
+                                    "message" : "MESSAGE_ANDROID_MANIFEST_DONT_HAVE_ACTIVITY",
+                                    "childs" : [
+                                        {
+                                            "type": "nodeValue",
+                                            "platform": "Android",
+                                            "key": "android:exported",
+                                            "value": "true",
+                                            "message": "MESSAGE_ANDROID_MANIFEST_DONT_HAVE_EXPORTED"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type" : "checkGameActivity",
+                    "value" : "true",
+                    "childs" : [
+                        {
+                            "type" : "checkXmlFile",
+                            "path" : "Plugins/Android/AndroidManifest.xml",
+                            "message" : "MESSAGE_ANDROID_MANIFEST_DONT_HAVE",
+                            "childs" : [
+                                {
+                                    "type" : "findNode",
+                                    "platform" : "Android",
+                                    "path" : "/manifest/application/activity",
+                                    "key" : "android:name",
+                                    "value" : "com.toast.android.gamebase.activity.GamebaseMainGameActivity",
+                                    "message" : "MESSAGE_ANDROID_MANIFEST_DONT_HAVE_GAME_ACTIVITY",
+                                    "childs" : [
+                                        {
+                                            "type": "nodeValue",
+                                            "platform": "Android",
+                                            "key": "android:exported",
+                                            "value": "true",
+                                            "message": "MESSAGE_ANDROID_MANIFEST_DONT_HAVE_EXPORTED"
+                                        }
+                                    ]
                                 }
                             ]
                         }
