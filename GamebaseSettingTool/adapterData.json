@@ -729,7 +729,7 @@
             "adapters" : [
                 {
                     "name" : "FCM",
-                    "displayName": "FCM (Firebase Cloud Messaging)",
+                    "displayName": "FCM",
                     "extras" : [
                         {
                             "type" : "text",
@@ -752,7 +752,7 @@
                 },
                 {
                     "name" : "ADM",
-                    "displayName": "ADM (Amazon Device Messaging)",
+                    "displayName": "ADM",
                     "platforms" : [
                         {
                             "name" : "Android",
@@ -764,7 +764,7 @@
                 },
                 {
                     "name" : "APNs",
-                    "displayName": "APNs (Apple Push Notification Service)",
+                    "displayName": "APNs",
                     "platforms" : [
                         {
                             "name" : "iOS",
