@@ -11,7 +11,7 @@
                     ],
                     "name" : "gamebase-sdk",
                     "repositories" : [
-                        "https://raw.githubusercontent.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-sdk/v{version}/gamebase-sdk.zip"
+                        "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/refs/heads/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-sdk/v{version}/gamebase-sdk.zip"
                     ],
                     "packages" : [
                         "sdk/gamebase-sdk"
@@ -801,8 +801,8 @@
                                 ],
                                 "name": "gamebase-adapter-etc-webview",
                                 "repositories" : [
-                                    "https://raw.githubusercontent.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_core.zip",
-                                    "https://raw.githubusercontent.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_windows.zip"
+                                    "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/refs/heads/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_core.zip",
+                                    "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/refs/heads/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_windows.zip"
                                 ],
                                 "packages" : [
                                     "sdk/gamebase-adapter-etc-webview"
@@ -818,8 +818,8 @@
                                 ],
                                 "name": "gamebase-adapter-etc-webview",
                                 "repositories" : [
-                                    "https://raw.githubusercontent.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_core.zip",
-                                    "https://raw.githubusercontent.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_mac.zip"
+                                    "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/refs/heads/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_core.zip",
+                                    "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/refs/heads/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_mac.zip"
                                 ],
                                 "packages" : [
                                     "sdk/gamebase-adapter-etc-webview"
