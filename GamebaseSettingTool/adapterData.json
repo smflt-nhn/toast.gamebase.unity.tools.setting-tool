@@ -86,7 +86,7 @@
                         {
                             "platform" : "Windows",
                             "type" : "check_adapter",
-                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
                             "value" : "WebView"
                         },
                         {
@@ -134,7 +134,7 @@
                         {
                             "platform" : "Windows",
                             "type" : "check_adapter",
-                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
                             "value" : "WebView"
                         },
                         {
@@ -220,7 +220,7 @@
                         {
                             "platform" : "Windows",
                             "type" : "check_adapter",
-                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
                             "value" : "WebView"
                         },
                         {
@@ -273,7 +273,7 @@
                         {
                             "platform" : "Windows",
                             "type" : "check_adapter",
-                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
                             "value" : "WebView"
                         },
                         {
@@ -326,7 +326,7 @@
                         {
                             "platform" : "Windows",
                             "type" : "check_adapter",
-                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
                             "value" : "WebView"
                         },
                         {
@@ -427,7 +427,7 @@
                         {
                             "platform" : "Windows",
                             "type" : "check_adapter",
-                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
                             "value" : "WebView"
                         },
                         {
