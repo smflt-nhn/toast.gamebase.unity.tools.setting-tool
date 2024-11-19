@@ -2,11 +2,11 @@
     "en": {
         "localize" : {
             "CATEGORY_AUTH_NAME":"Auth",
-            "CATEGORY_AUTH_DESC":"Gamebase Auth Adapters",
+            "CATEGORY_AUTH_DESC":"Setting up Gamebase IDP (ID Provider) authentication.",
             "CATEGORY_PURCHASE_NAME":"Purchase",
-            "CATEGORY_PURCHASE_DESC":"Gamebase IAP Adapters",
+            "CATEGORY_PURCHASE_DESC":"Setting up Gamebase IAP (In-App Purchase) payment.",
             "CATEGORY_PUSH_NAME":"Push",
-            "CATEGORY_PUSH_DESC":"Gamebase Push Adapters",
+            "CATEGORY_PUSH_DESC":"Setting up Gamebase Push Notification alerts.",
             "CATEGORY_ADDON_NAME":"Add On",
             "CATEGORY_ADDON_DESC":"Gamebase Addon Adapters",
             "MESSAGE_FACEBOOK_NEED_CHECK":"com.facebook.sdk.ClientToken must be added. Please check the guide.",
@@ -36,11 +36,11 @@
     "ko": {
         "localize" : {
             "CATEGORY_AUTH_NAME":"Auth",
-            "CATEGORY_AUTH_DESC":"Gamebase 인증 어댑터",
+            "CATEGORY_AUTH_DESC":"Gamebase IDP(ID Provider) 인증을 설정합니다.",
             "CATEGORY_PURCHASE_NAME":"Purchase",
-            "CATEGORY_PURCHASE_DESC":"Gamebase 결제 어댑터",
+            "CATEGORY_PURCHASE_DESC":"Gamebase IAP(In-App Purchase) 결제를 설정합니다.",
             "CATEGORY_PUSH_NAME":"Push",
-            "CATEGORY_PUSH_DESC":"Gamebase 푸시 어댑터",
+            "CATEGORY_PUSH_DESC":"Gamebase Push Notification 알림을 설정합니다.",
             "CATEGORY_ADDON_NAME":"Add On",
             "CATEGORY_ADDON_DESC":"Gamebase 추가 기능 어댑터",
             "MESSAGE_FACEBOOK_NEED_CHECK":"com.facebook.sdk.ClientToken가 추가되어야 합니다. 가이드를 확인해주세요.",
@@ -67,11 +67,11 @@
     "ja": {
         "localize" : {
             "CATEGORY_AUTH_NAME":"Auth",
-            "CATEGORY_AUTH_DESC":"Gamebase認証アダプタ",
+            "CATEGORY_AUTH_DESC":"Gamebase IDP（IDプロバイダ）認証を設定します。",
             "CATEGORY_PURCHASE_NAME":"Purchase",
-            "CATEGORY_PURCHASE_DESC":"Gamebase決済アダプタ",
+            "CATEGORY_PURCHASE_DESC":"Gamebase IAP（インアプリ購入）の決済を設定します。",
             "CATEGORY_PUSH_NAME":"Push",
-            "CATEGORY_PUSH_DESC":"Gamebaseプッシュアダプタ",
+            "CATEGORY_PUSH_DESC":"Gamebase Push Notificationの通知を設定します。",
             "CATEGORY_ADDON_NAME":"Add On",
             "CATEGORY_ADDON_DESC":"Gamebaseアドオンアダプタ",
             "MESSAGE_FACEBOOK_NEED_CHECK":"com.facebook.sdk.ClientTokenを追加する必要があります。ガイドを確認してください。",

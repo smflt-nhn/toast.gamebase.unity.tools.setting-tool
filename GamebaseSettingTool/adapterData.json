@@ -522,7 +522,7 @@
             "adapters" : [
                 {
                     "name": "IapGoogle",
-                    "displayName": "Google Play",
+                    "displayName": "Google Play Store",
                     "platforms" : [
                         {
                             "name" : "Android",
@@ -630,7 +630,7 @@
                 },
                 {
                     "name": "IapAmazon",
-                    "displayName": "Amazon",
+                    "displayName": "Amazon Store",
                     "platforms" : [
                         {
                             "name" : "Android",
@@ -642,7 +642,7 @@
                 },
                 {
                     "name": "IapHuawei",
-                    "displayName": "Huawei",
+                    "displayName": "Huawei Store",
                     "extras" : [
                         {
                             "type" : "text",
@@ -680,7 +680,7 @@
                 },
                 {
                     "name": "IapMyCard",
-                    "displayName": "MyCard",
+                    "displayName": "MyCard Store",
                     "extras" : [
                         {
                             "platform" : "Android",
@@ -729,7 +729,7 @@
             "adapters" : [
                 {
                     "name" : "FCM",
-                    "displayName": "FCM",
+                    "displayName": "FCM (Firebase Cloud Messaging)",
                     "extras" : [
                         {
                             "type" : "text",
@@ -752,7 +752,7 @@
                 },
                 {
                     "name" : "ADM",
-                    "displayName": "ADM",
+                    "displayName": "ADM (Amazon Device Messaging)",
                     "platforms" : [
                         {
                             "name" : "Android",
@@ -764,7 +764,7 @@
                 },
                 {
                     "name" : "APNs",
-                    "displayName": "APNs",
+                    "displayName": "APNs (Apple Push Notification Service)",
                     "platforms" : [
                         {
                             "name" : "iOS",
