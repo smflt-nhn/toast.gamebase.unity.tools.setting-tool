@@ -788,7 +788,7 @@
                         {
                             "platform" : "macOS",
                             "type" : "check_unity_version",
-                            "text" : "EXTRA_DESKTOP_WEBVIEW_MACOS_MINVERSION_TEXT",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
                             "value" : "2021.3.35"
                         }
                     ],
