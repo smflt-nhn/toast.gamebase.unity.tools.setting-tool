@@ -33,6 +33,13 @@
                     "typeName" : "GooglePlayServices.PlayServicesResolver,Google.JarResolver"
                 },
                 {
+                    "type" : "is_over_value",
+                    "typeName" : "GooglePlayServices.UnityCompat,Google.JarResolver",
+                    "methodName" : "GetAndroidTargetSDKVersion",
+                    "value" : "28",
+                    "message" : "POPUP_GAMEBASE_SETTING_DONT_RESOLVE_EDM4U_TARGET_28_MESSAGE"
+                },
+                {
                     "type" : "run",
                     "typeName" : "GooglePlayServices.PlayServicesResolver,Google.JarResolver",
                     "methodName" : "ResolveSync",
@@ -49,8 +56,7 @@
             "runEvents" : [
                 {
                     "type" : "check_type",
-                    "typeName" : "Google.IOSResolver,Google.IOSResolver",
-                    "methodName" : "AutoInstallCocoapods"
+                    "typeName" : "Google.IOSResolver,Google.IOSResolver"
                 }
             ]
         },
