@@ -837,6 +837,26 @@
                 {
                     "name" : "GPGSAutoLogin",
                     "displayName": "GPGS AutoLogin",
+                    "extras" : [
+                        {
+                            "platform" : "Android",
+                            "type" : "check_sdk_version",
+                            "text" : "EXTRA_MIN_ANDROID_SDK_21_TEXT",
+                            "value" : "21"
+                        },
+                        {
+                            "platform" : "Android",
+                            "type" : "check_android_manifest_meta_data_name",
+                            "value" : "com.google.android.gms.games.APP_ID",
+                            "text" : "MESSAGE_GPGSV2_NEED_CHECK"
+                        },
+                        {
+                            "platform" : "Android",
+                            "type" : "link",
+                            "text" : "SETTING_GUIDE",
+                            "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#gpgs-v2-idp"
+                        }
+                    ],
                     "platforms" : [
                         {
                             "name" : "Android",
