@@ -835,6 +835,19 @@
                     ]
                 },
                 {
+                    "name" : "GPGSAutoLogin",
+                    "displayName": "GPGS AutoLogin",
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "minGamebaseVersion" : "2.68.0",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-gpgs-autologin"
+                            }
+                        }
+                    ]
+                },
+                {
                     "name" : "CustomReceiver",
                     "displayName": "Custom Push Receiver",
                     "platforms" : [
