@@ -858,6 +858,32 @@
                             }
                         }
                     ]
+                },
+                {
+                    "name" : "Test",
+                    "displayName": "내부 테스트 시 선택",
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" :
+                            {
+                                "name" : "com.toast.android.gamebase:gamebase-sdk",
+                                "repositories": [
+                                    "https://repo.nhnent.com/content/repositories/releases",
+                                    "https://repo.nhnent.com/content/repositories/snapshots"
+                                ]
+                            }
+                        },
+                        {
+                            "name" : "iOS",
+                            "install" : {
+                                "name": "Gamebase",
+                                "repositories": [
+                                    "https://github.nhnent.com/game-platform/gamebase.client.ios.release.git"
+                                ]
+                            }
+                        }
+                    ]
                 }
             ]
         }
