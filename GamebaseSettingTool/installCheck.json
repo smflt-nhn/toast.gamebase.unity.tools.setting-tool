@@ -65,6 +65,11 @@
                     ]
                 },
                 {
+                    "type" : "checkType",
+                    "value" : "GooglePlayServices.PlayServicesResolver,Google.JarResolver",
+                    "message" : "MESSAGE_EDM4U_ANDROID_ESSENTIAL_EDM4U"
+                },
+                {
                     "type" : "fileCheck",
                     "path" : "Plugins/Android/mainTemplate.gradle",
                     "message" : "MESSAGE_ANDROID_MAIN_TEMPLATE_DONT_HAVE"
@@ -131,6 +136,11 @@
         {
             "platform": "iOS",
             "checkList": [
+                {
+                    "type" : "checkType",
+                    "value" : "Google.IOSResolver,Google.IOSResolver",
+                    "message" : "MESSAGE_EDM4U_IOS_ESSENTIAL_EDM4U"
+                },
                 {
                     "type": "checkXmlFile",
                     "path": "../ProjectSettings/GvhProjectSettings.xml",
