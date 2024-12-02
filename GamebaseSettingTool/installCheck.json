@@ -65,11 +65,6 @@
                     ]
                 },
                 {
-                    "type" : "checkType",
-                    "value" : "GooglePlayServices.PlayServicesResolver,Google.JarResolver",
-                    "message" : "MESSAGE_EDM4U_ANDROID_ESSENTIAL_EDM4U"
-                },
-                {
                     "type" : "fileCheck",
                     "path" : "Plugins/Android/mainTemplate.gradle",
                     "message" : "MESSAGE_ANDROID_MAIN_TEMPLATE_DONT_HAVE"
@@ -80,54 +75,61 @@
                     "message" : "MESSAGE_ANDROID_GRADLE_TEMPLATE_DONT_HAVE"
                 },
                 {
-                    "type" : "checkXmlFile",
-                    "path" : "../ProjectSettings/GvhProjectSettings.xml",
-                    "message" : "MESSAGE_EDM4U_ANDROID_SETTING_DONT_HAVE",
+                    "type" : "checkType",
+                    "value" : "GooglePlayServices.PlayServicesResolver,Google.JarResolver",
+                    "message" : "MESSAGE_EDM4U_ANDROID_ESSENTIAL_EDM4U",
                     "childs" : [
                         {
-                            "type" : "checkValue",
-                            "platform" : "Android",
-                            "path" : "/projectSettings/projectSetting",
-                            "key" : "GooglePlayServices.AutoResolverEnabled",
-                            "value" : "False",
-                            "defaultValue": "True",
-                            "message" : "MESSAGE_EDM4U_ANDROID_ENABLE_AUTO_RESOLVER"
-                        },
-                        {
-                            "type" : "checkValue",
-                            "platform" : "Android",
-                            "path" : "/projectSettings/projectSetting",
-                            "key" : "GooglePlayServices.ExplodeAars",
-                            "value" : "False",
-                            "defaultValue": "True",
-                            "message" : "MESSAGE_EDM4U_ANDROID_EXPLODE_AAR"
-                        },
-                        {
-                            "type" : "checkValue",
-                            "platform" : "Android",
-                            "path" : "/projectSettings/projectSetting",
-                            "key" : "GooglePlayServices.PatchMainTemplateGradle",
-                            "value" : "True",
-                            "defaultValue": "True",
-                            "message" : "MESSAGE_EDM4U_ANDROID_PATCH_MAINTEMPLATE_GRADLE"
-                        },
-                        {
-                            "type" : "checkValue",
-                            "platform" : "Android",
-                            "path" : "/projectSettings/projectSetting",
-                            "key" : "GooglePlayServices.PatchPropertiesTemplateGradle",
-                            "value" : "True",
-                            "defaultValue": "True",
-                            "message" : "MESSAGE_EDM4U_ANDROID_PATCH_GRADLE_TEMPLATE_PROPERTIES"
-                        },
-                        {
-                            "type" : "checkValue",
-                            "platform" : "Android",
-                            "path" : "/projectSettings/projectSetting",
-                            "key" : "GooglePlayServices.UseJetifier",
-                            "value" : "True",
-                            "defaultValue": "True",
-                            "message" : "MESSAGE_EDM4U_ANDROID_USE_JETIFIER"
+                            "type" : "checkXmlFile",
+                            "path" : "../ProjectSettings/GvhProjectSettings.xml",
+                            "message" : "MESSAGE_EDM4U_ANDROID_SETTING_DONT_HAVE",
+                            "childs" : [
+                                {
+                                    "type" : "checkValue",
+                                    "platform" : "Android",
+                                    "path" : "/projectSettings/projectSetting",
+                                    "key" : "GooglePlayServices.AutoResolverEnabled",
+                                    "value" : "False",
+                                    "defaultValue": "True",
+                                    "message" : "MESSAGE_EDM4U_ANDROID_ENABLE_AUTO_RESOLVER"
+                                },
+                                {
+                                    "type" : "checkValue",
+                                    "platform" : "Android",
+                                    "path" : "/projectSettings/projectSetting",
+                                    "key" : "GooglePlayServices.ExplodeAars",
+                                    "value" : "False",
+                                    "defaultValue": "True",
+                                    "message" : "MESSAGE_EDM4U_ANDROID_EXPLODE_AAR"
+                                },
+                                {
+                                    "type" : "checkValue",
+                                    "platform" : "Android",
+                                    "path" : "/projectSettings/projectSetting",
+                                    "key" : "GooglePlayServices.PatchMainTemplateGradle",
+                                    "value" : "True",
+                                    "defaultValue": "True",
+                                    "message" : "MESSAGE_EDM4U_ANDROID_PATCH_MAINTEMPLATE_GRADLE"
+                                },
+                                {
+                                    "type" : "checkValue",
+                                    "platform" : "Android",
+                                    "path" : "/projectSettings/projectSetting",
+                                    "key" : "GooglePlayServices.PatchPropertiesTemplateGradle",
+                                    "value" : "True",
+                                    "defaultValue": "True",
+                                    "message" : "MESSAGE_EDM4U_ANDROID_PATCH_GRADLE_TEMPLATE_PROPERTIES"
+                                },
+                                {
+                                    "type" : "checkValue",
+                                    "platform" : "Android",
+                                    "path" : "/projectSettings/projectSetting",
+                                    "key" : "GooglePlayServices.UseJetifier",
+                                    "value" : "True",
+                                    "defaultValue": "True",
+                                    "message" : "MESSAGE_EDM4U_ANDROID_USE_JETIFIER"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -140,29 +142,31 @@
                     "type" : "checkType",
                     "value" : "Google.IOSResolver,Google.IOSResolver",
                     "message" : "MESSAGE_EDM4U_IOS_ESSENTIAL_EDM4U"
-                },
-                {
-                    "type": "checkXmlFile",
-                    "path": "../ProjectSettings/GvhProjectSettings.xml",
-                    "message" : "MESSAGE_EDM4U_IOS_SETTING_DONT_HAVE",
-                    "childs": [
+                    "childs" : [
                         {
-                            "type": "checkValue",
-                            "platform": "iOS",
-                            "path": "/projectSettings/projectSetting",
-                            "key": "Google.IOSResolver.PodToolExecutionViaShellEnabled",
-                            "value": "False",
-                            "defaultValue": "True",
-                            "message": "MESSAGE_EDM4U_IOS_POD_TOOL_EXECUTION_SHELL_ENABLE"
-                        },
-                        {
-                            "type": "checkValue",
-                            "platform": "iOS",
-                            "path": "/projectSettings/projectSetting",
-                            "key": "Google.IOSResolver.PodfileStaticLinkFrameworks",
-                            "value": "False",
-                            "defaultValue": "True",
-                            "message": "MESSAGE_EDM4U_IOS_PODFILE_STATIC_LINK_FRAMEWORKS"
+                            "type": "checkXmlFile",
+                            "path": "../ProjectSettings/GvhProjectSettings.xml",
+                            "message" : "MESSAGE_EDM4U_IOS_SETTING_DONT_HAVE",
+                            "childs": [
+                                {
+                                    "type": "checkValue",
+                                    "platform": "iOS",
+                                    "path": "/projectSettings/projectSetting",
+                                    "key": "Google.IOSResolver.PodToolExecutionViaShellEnabled",
+                                    "value": "False",
+                                    "defaultValue": "True",
+                                    "message": "MESSAGE_EDM4U_IOS_POD_TOOL_EXECUTION_SHELL_ENABLE"
+                                },
+                                {
+                                    "type": "checkValue",
+                                    "platform": "iOS",
+                                    "path": "/projectSettings/projectSetting",
+                                    "key": "Google.IOSResolver.PodfileStaticLinkFrameworks",
+                                    "value": "False",
+                                    "defaultValue": "True",
+                                    "message": "MESSAGE_EDM4U_IOS_PODFILE_STATIC_LINK_FRAMEWORKS"
+                                }
+                            ]
                         }
                     ]
                 }
