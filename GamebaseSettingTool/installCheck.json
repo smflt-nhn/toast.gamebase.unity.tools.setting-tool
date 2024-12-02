@@ -141,7 +141,7 @@
                 {
                     "type" : "checkType",
                     "value" : "Google.IOSResolver,Google.IOSResolver",
-                    "message" : "MESSAGE_EDM4U_IOS_ESSENTIAL_EDM4U"
+                    "message" : "MESSAGE_EDM4U_IOS_ESSENTIAL_EDM4U",
                     "childs" : [
                         {
                             "type": "checkXmlFile",
