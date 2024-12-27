@@ -186,12 +186,6 @@
                     "extras" : [
                         {
                             "platform" : "Android",
-                            "type" : "check_sdk_version",
-                            "text" : "EXTRA_MIN_ANDROID_SDK_21_TEXT",
-                            "value" : "21"
-                        },
-                        {
-                            "platform" : "Android",
                             "type" : "check_android_manifest_meta_data_name",
                             "value" : "com.google.android.gms.games.APP_ID",
                             "text" : "MESSAGE_GPGSV2_NEED_CHECK"
@@ -217,12 +211,6 @@
                     "name" : "Naver",
                     "displayName": "NAVER",
                     "extras" : [
-                        {
-                            "platform" : "Android",
-                            "type" : "check_sdk_version",
-                            "text" : "EXTRA_MIN_ANDROID_SDK_21_TEXT",
-                            "value" : "21"
-                        },
                         {
                             "platform" : "Windows",
                             "type" : "check_adapter",
@@ -270,12 +258,6 @@
                     "name" : "Twitter",
                     "displayName": "Twitter",
                     "extras" : [
-                        {
-                            "platform" : "Android",
-                            "type" : "check_sdk_version",
-                            "text" : "EXTRA_MIN_ANDROID_SDK_21_TEXT",
-                            "value" : "21"
-                        },
                         {
                             "platform" : "Windows",
                             "type" : "check_adapter",
@@ -617,14 +599,6 @@
                 {
                     "name": "IapGalaxy",
                     "displayName": "Galaxy Store",
-                    "extras" : [
-                        {
-                            "platform" : "Android",
-                            "type" : "check_sdk_version",
-                            "text" : "EXTRA_MIN_ANDROID_SDK_21_TEXT",
-                            "value" : "21"
-                        }
-                    ],
                     "platforms" : [
                         {
                             "name" : "Android",
@@ -688,12 +662,6 @@
                     "name": "IapMyCard",
                     "displayName": "MyCard Store",
                     "extras" : [
-                        {
-                            "platform" : "Android",
-                            "type" : "check_sdk_version",
-                            "text" : "EXTRA_MIN_ANDROID_SDK_21_TEXT",
-                            "value" : "21"
-                        },
                         {
                             "platform" : "Android",
                             "type" : "text",
@@ -838,12 +806,6 @@
                     "name" : "GPGSAutoLogin",
                     "displayName": "GPGS AutoLogin",
                     "extras" : [
-                        {
-                            "platform" : "Android",
-                            "type" : "check_sdk_version",
-                            "text" : "EXTRA_MIN_ANDROID_SDK_21_TEXT",
-                            "value" : "21"
-                        },
                         {
                             "platform" : "Android",
                             "type" : "check_android_manifest_meta_data_name",
