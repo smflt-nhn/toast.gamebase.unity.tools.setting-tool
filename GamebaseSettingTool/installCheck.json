@@ -7,7 +7,7 @@
                 {
                     "platform" : "Android",
                     "type" : "checkSdkVersion",
-                    "text" : "MESSAGE_ANDROID_MIN_SDK_21_TEXT",
+                    "message" : "MESSAGE_ANDROID_MIN_SDK_21_TEXT",
                     "value" : "21"
                 },
                 {
