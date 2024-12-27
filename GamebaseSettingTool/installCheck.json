@@ -119,15 +119,6 @@
                                     "value" : "True",
                                     "defaultValue": "True",
                                     "message" : "MESSAGE_EDM4U_ANDROID_PATCH_GRADLE_TEMPLATE_PROPERTIES"
-                                },
-                                {
-                                    "type" : "checkValue",
-                                    "platform" : "Android",
-                                    "path" : "/projectSettings/projectSetting",
-                                    "key" : "GooglePlayServices.UseJetifier",
-                                    "value" : "True",
-                                    "defaultValue": "True",
-                                    "message" : "MESSAGE_EDM4U_ANDROID_USE_JETIFIER"
                                 }
                             ]
                         }

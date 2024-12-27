@@ -1,7 +1,8 @@
 {
     "noticeList": 
     [
-       
-        
+        {
+            "message" : "Notice test"
+        }
     ]
 }
