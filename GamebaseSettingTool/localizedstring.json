@@ -90,7 +90,7 @@
             "EXTRA_MIN_ANDROID_SDK_21_TEXT":"Android API Level 21以降でサポートされています。\nMinimum Api LevelをAndroid 5.0 'Lollipop' (API level 21)以上に設定してください。",
             "EXTRA_MIN_ANDROID_SDK_23_TEXT":"Android API Level 23以降でサポートされています。\nMinimum Api LevelをAndroid 6.0 'Marshmallow' (API level 23)以上に設定してください。",
             "EXTRA_MIN_ANDROID_SDK_25_TEXT":"Android API Level 25以降でサポートされています。\nMinimum Api LevelをAndroid 7.1 'Nougat' (API level 25)以上に設定してください。",
-            "EXTRA_MIN_IOS_SDK_12_TEXT":"iOS 13以降でサポートされています。\nTarget minimum iOS Versionを12.0以上に設定してください。",
+            "EXTRA_MIN_IOS_SDK_12_TEXT":"iOS 12以降でサポートされています。\nTarget minimum iOS Versionを12.0以上に設定してください。",
             "EXTRA_MIN_IOS_SDK_13_TEXT":"iOS 13以降でサポートされています。\nTarget minimum iOS Versionを13.0以上に設定してください。",
             "EXTRA_MIN_IOS_SDK_14_TEXT":"iOS 14以降でサポートされています。\nTarget minimum iOS Versionを14.0以上に設定してください。",
             "EXTRA_NEED_ANDROID_MANIFEST_SETTING":"必要なAndroidManifest設定があります。",
