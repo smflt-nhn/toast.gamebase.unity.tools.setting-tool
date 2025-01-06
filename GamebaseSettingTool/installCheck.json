@@ -136,6 +136,12 @@
             "platform": "iOS",
             "checkList": [
                 {
+                    "platform" : "iOS",
+                    "type" : "checkSdkVersion",
+                    "message" : "EXTRA_MIN_IOS_SDK_12_TEXT",
+                    "value" : "12"
+                },
+                {
                     "type" : "checkType",
                     "value" : "Google.IOSResolver,Google.IOSResolver",
                     "message" : "MESSAGE_EDM4U_IOS_ESSENTIAL_EDM4U",
