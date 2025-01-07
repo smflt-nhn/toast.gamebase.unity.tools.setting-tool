@@ -22,14 +22,10 @@
             "EXTRA_NEED_DESKTOP_WEBVIEW_MACOS_TEXT":"WebView for PC is required to use this feature on macOS.",
             "EXTRA_MIN_ANDROID_SDK_23_TEXT":"Supported on Android API level 23 and higher.\nPlease set the minimum API level to Android 6.0 'Marshmallow' (API level 23) or higher.",
             "EXTRA_MIN_ANDROID_SDK_25_TEXT":"Supported on Android API level 25 and higher.\nPlease set the minimum API level to Android 7.1 'Nougat' (API level 25) or higher.",
-            "EXTRA_MIN_IOS_SDK_12_TEXT":"Supported by iOS 12 or later.\nPlease set Target minimum iOS Version to 12.0 or higher.",
             "EXTRA_MIN_IOS_SDK_13_TEXT":"Supported by iOS 13 or later.\nPlease set Target minimum iOS Version to 13.0 or higher.",
             "EXTRA_MIN_IOS_SDK_14_TEXT":"Supported by iOS 14 or later.\nPlease set Target minimum iOS Version to 14.0 or higher.",
             "EXTRA_NEED_ANDROID_MANIFEST_SETTING":"There are necessary AndroidManifest settings.",
             "SETTING_GUIDE":"[Setting Guide]",
-            "EXTRA_FACEBOOK_GRAPH_TEXT":"Requires installation of the Facebook SDK for Unity\nFacebook Adapter authentication is replaced by Facebook SDK for Unity authentication.",
-            "EXTRA_FACEBOOK_GRAPH_LINK":"[Install Facebook SDK for Unity]",
-            "EXTRA_FACEBOOK_GRAPH_CHECK_TYPE":"Facebook SDK for Unity",
             "EXTRA_DOWNLOAD_LINK":"[Download]"
         }
     },
@@ -86,14 +82,10 @@
             "EXTRA_NEED_DESKTOP_WEBVIEW_MACOS_TEXT":"macOSでその機能を使用するにはWebView for PCが必要です。",
             "EXTRA_MIN_ANDROID_SDK_23_TEXT":"Android API Level 23以降でサポートされています。\nMinimum Api LevelをAndroid 6.0 'Marshmallow' (API level 23)以上に設定してください。",
             "EXTRA_MIN_ANDROID_SDK_25_TEXT":"Android API Level 25以降でサポートされています。\nMinimum Api LevelをAndroid 7.1 'Nougat' (API level 25)以上に設定してください。",
-            "EXTRA_MIN_IOS_SDK_12_TEXT":"iOS 12以降でサポートされています。\nTarget minimum iOS Versionを12.0以上に設定してください。",
             "EXTRA_MIN_IOS_SDK_13_TEXT":"iOS 13以降でサポートされています。\nTarget minimum iOS Versionを13.0以上に設定してください。",
             "EXTRA_MIN_IOS_SDK_14_TEXT":"iOS 14以降でサポートされています。\nTarget minimum iOS Versionを14.0以上に設定してください。",
             "EXTRA_NEED_ANDROID_MANIFEST_SETTING":"必要なAndroidManifest設定があります。",
             "SETTING_GUIDE":"[Setting Guide]",
-            "EXTRA_FACEBOOK_GRAPH_TEXT":"Facebook SDK for Unityのインストールは必須です。\nFacebook Adapter認証はFacebook SDK for Unity認証に置き換えられます。",
-            "EXTRA_FACEBOOK_GRAPH_LINK":"[Facebook SDK for Unity のインストール]",
-            "EXTRA_FACEBOOK_GRAPH_CHECK_TYPE":"Facebook SDK for Unity",
             "EXTRA_DOWNLOAD_LINK":"[ダウンロード]"
         }
     }
