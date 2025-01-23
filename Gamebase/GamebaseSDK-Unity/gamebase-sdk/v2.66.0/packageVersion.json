@@ -1,0 +1,13 @@
+{
+    "unityVersion":"2.66.0",
+    "packages":
+    [
+        {
+            "name":"gamebase-sdk"
+        }, 
+        {
+            "name":"gamebase-adapter-etc-webview",
+            "version":"2.3.1"
+        }
+    ]
+}

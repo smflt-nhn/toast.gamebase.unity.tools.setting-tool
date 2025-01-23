@@ -1,0 +1,847 @@
+{
+    "packageInfo":
+    {
+        "versionPath" : "https://raw.githubusercontent.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-sdk/v{version}/packageVersion.json",
+        "packages" : [
+            {
+                "name" : "Gamebase",
+                "install" : {
+                    "dirs" : [
+                        "sdk/gamebase-sdk"
+                    ],
+                    "name" : "gamebase-sdk",
+                    "repositories" : [
+                        "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/refs/heads/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-sdk/v{version}/gamebase-sdk.zip"
+                    ],
+                    "packages" : [
+                        "sdk/gamebase-sdk"
+                    ]
+                }
+            }
+        ]
+    },
+    "platforms" : [
+        {
+            "name" : "Android",
+            "buildTargetName" : "Android",
+            "install" : {
+                "name" : "com.toast.android.gamebase:gamebase-sdk"
+            },
+            "runEvents" : [
+                {
+                    "type" : "check_type",
+                    "typeName" : "GooglePlayServices.PlayServicesResolver,Google.JarResolver"
+                },
+                {
+                    "type" : "is_over_value",
+                    "typeName" : "GooglePlayServices.UnityCompat,Google.JarResolver",
+                    "methodName" : "GetAndroidTargetSDKVersion",
+                    "value" : "28",
+                    "message" : "POPUP_GAMEBASE_SETTING_DONT_RESOLVE_EDM4U_TARGET_28_MESSAGE"
+                },
+                {
+                    "type" : "run",
+                    "typeName" : "GooglePlayServices.PlayServicesResolver,Google.JarResolver",
+                    "methodName" : "ResolveSync",
+                    "parameters" : [ true ]
+                }
+            ]
+        },
+        {
+            "name" : "iOS",
+            "buildTargetName" : "iOS",
+            "install" : {
+                "name" : "Gamebase"
+            },
+            "runEvents" : [
+                {
+                    "type" : "check_type",
+                    "typeName" : "Google.IOSResolver,Google.IOSResolver"
+                }
+            ]
+        },
+        {
+            "name" : "Windows"
+        },
+        {
+            "name" : "macOS"
+        }
+    ],
+    "categorys" : [
+        {
+            "name" : "authentication",
+            "displayName" : "CATEGORY_AUTH_NAME",
+            "description" : "CATEGORY_AUTH_DESC",
+            "adapters" : [
+                {
+                    "name": "Facebook",
+                    "displayName": "Facebook",
+                    "extras" : [
+                        {
+                            "platform" : "Android",
+                            "type" : "check_android_manifest_meta_data_name",
+                            "value" : "com.facebook.sdk.ClientToken",
+                            "text" : "MESSAGE_FACEBOOK_NEED_CHECK"
+                        },
+                        {
+                            "platform" : "Android",
+                            "type" : "link",
+                            "text" : "SETTING_GUIDE",
+                            "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#facebook-idp"
+                        },
+                        {
+                            "platform" : "Windows",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_MACOS_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_unity_version",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
+                            "value" : "2021.3.35"
+                        }
+                    ],
+                    
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-facebook"
+                            }
+                        },
+                        {
+                            "name" : "iOS",
+                            "install" : {
+                                "name" : "GamebaseAuthFacebookAdapter"
+                            }
+                        },
+                        {
+                            "name" : "Windows",
+                            "include": ["WebView"]
+                        },
+                        {
+                            "name" : "macOS",
+                            "minGamebaseVersion" : "2.63.0",
+                            "include": ["WebView"]
+                        }
+                    ]
+                },
+                {
+                    "name" : "Google",
+                    "displayName": "Google",
+                    "extras" : [
+                        {
+                            "platform" : "Windows",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_MACOS_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_unity_version",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
+                            "value" : "2021.3.35"
+                        }
+                    ],
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-google"
+                            }
+                        },
+                        {
+                            "name" : "iOS",
+                            "install" : {
+                                "name" : "GamebaseAuthGoogleAdapter"
+                            }
+                        },
+                        {
+                            "name" : "Windows",
+                            "include": ["WebView"]
+                        },
+                        {
+                            "name" : "macOS",
+                            "minGamebaseVersion" : "2.63.0",
+                            "include": ["WebView"]
+                        }
+                    ]
+                },
+                {
+                    "name" : "GPGS_V2",
+                    "displayName": "GPGS_V2",
+                    "extras" : [
+                        {
+                            "platform" : "Android",
+                            "type" : "check_android_manifest_meta_data_name",
+                            "value" : "com.google.android.gms.games.APP_ID",
+                            "text" : "MESSAGE_GPGSV2_NEED_CHECK"
+                        },
+                        {
+                            "platform" : "Android",
+                            "type" : "link",
+                            "text" : "SETTING_GUIDE",
+                            "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#gpgs-v2-idp"
+                        }
+                    ],
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "minGamebaseVersion" : "2.66.0",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-gpgs-v2"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name" : "Naver",
+                    "displayName": "NAVER",
+                    "extras" : [
+                        {
+                            "platform" : "Windows",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_MACOS_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_unity_version",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
+                            "value" : "2021.3.35"
+                        }
+                    ],
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-naver"
+                            }
+                        },
+                        {
+                            "name" : "iOS",
+                            "install" : {
+                                "name" : "GamebaseAuthNaverAdapter"
+                            }
+                        },
+                        {
+                            "name" : "Windows",
+                            "include": ["WebView"]
+                        },
+                        {
+                            "name" : "macOS",
+                            "minGamebaseVersion" : "2.63.0",
+                            "include": ["WebView"]
+                        }
+                    ]
+                },
+                {
+                    "name" : "Twitter",
+                    "displayName": "Twitter",
+                    "extras" : [
+                        {
+                            "platform" : "Windows",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_MACOS_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_unity_version",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
+                            "value" : "2021.3.35"
+                        }
+                    ],
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-twitter"
+                            }
+                        },
+                        {
+                            "name" : "iOS",
+                            "install" : {
+                                "name" : "GamebaseAuthTwitterAdapter"
+                            }
+                        },
+                        {
+                            "name" : "Windows",
+                            "include": ["WebView"]
+                        },
+                        {
+                            "name" : "macOS",
+                            "minGamebaseVersion" : "2.63.0",
+                            "include": ["WebView"]
+                        }
+                    ]
+                },
+                {
+                    "name" : "Line",
+                    "displayName": "LINE",
+                    "extras" : [
+                        {
+                            "platform" : "iOS",
+                            "type" : "check_sdk_version",
+                            "text" : "EXTRA_MIN_IOS_SDK_13_TEXT",
+                            "value" : "13"
+                        },
+                        {
+                            "platform" : "Windows",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_MACOS_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_unity_version",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
+                            "value" : "2021.3.35"
+                        }
+                    ],
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-line"
+                            }
+                        },
+                        {
+                            "name" : "iOS",
+                            "install" : {
+                                "name" : "GamebaseAuthLineAdapter"
+                            }
+                        },
+                        {
+                            "name" : "Windows",
+                            "include": ["WebView"]
+                        },
+                        {
+                            "name" : "macOS",
+                            "minGamebaseVersion" : "2.63.0",
+                            "include": ["WebView"]
+                        }
+                    ]
+                },
+                {
+                    "name" : "AppleId",
+                    "displayName": "Sign In with Apple",
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-appleid"
+                            }
+                        },
+                        {
+                            "name" : "iOS",
+                            "install" : {
+                                "name" : "GamebaseAuthAppleidAdapter"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Weibo",
+                    "displayName": "Weibo",
+                    "extras" : [
+                        {
+                            "platform" : "Android",
+                            "type" : "text",
+                            "text" : "EXTRA_WEIBO_IDP_TEXT"
+                        },
+                        {
+                            "platform" : "Android",
+                            "type" : "text",
+                            "text" : "EXTRA_NEED_ANDROID_MANIFEST_SETTING"
+                        },
+                        {
+                            "platform" : "Android",
+                            "type" : "link",
+                            "text" : "SETTING_GUIDE",
+                            "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#weibo-idp"
+                        }
+                    ],
+                    "platforms": [
+                        {
+                            "name": "Android",
+                            "install" : {
+                                "name": "com.toast.android.gamebase:gamebase-adapter-auth-weibo"
+                            }
+                        },
+                        {
+                            "name": "iOS",
+                            "install" : {
+                                "name": "GamebaseAuthWeiboAdapter"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name" : "Payco",
+                    "displayName": "PAYCO",
+                    "extras" : [
+                        {
+                            "platform" : "Windows",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_WINDOW_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_adapter",
+                            "text" : "EXTRA_NEED_DESKTOP_WEBVIEW_MACOS_TEXT",
+                            "value" : "WebView"
+                        },
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_unity_version",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
+                            "value" : "2021.3.35"
+                        }
+                    ],
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-payco"
+                            }
+                        },
+                        {
+                            "name" : "iOS",
+                            "install" : {
+                                "name" : "GamebaseAuthPaycoAdapter"
+                            }
+                        },
+                        {
+                            "name" : "Windows",
+                            "include": ["WebView"]
+                        },
+                        {
+                            "name" : "macOS",
+                            "minGamebaseVersion" : "2.63.0",
+                            "include": ["WebView"]
+                        }
+                    ]
+                },
+                {
+                    "name" : "Steam",
+                    "displayName": "Steam",
+                    "extras" : [
+                        {
+                            "platform" : "Android",
+                            "type" : "check_sdk_version",
+                            "text" : "EXTRA_MIN_ANDROID_SDK_25_TEXT",
+                            "value" : "25"
+                        },
+                        {
+                            "platform" : "iOS",
+                            "type" : "check_sdk_version",
+                            "text" : "EXTRA_MIN_IOS_SDK_14_TEXT",
+                            "value" : "14"
+                        }
+                    ],
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "minGamebaseVersion" : "2.67.0",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-steam"
+                            }
+                        },
+                        {
+                            "name" : "iOS",
+                            "minGamebaseVersion" : "2.67.0",
+                            "install" : {
+                                "name" : "GamebaseAuthSteamAdapter"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name" : "Gamecenter",
+                    "displayName": "Apple Game Center",
+                    "platforms" : [
+                        {
+                            "name" : "iOS",
+                            "install" : {
+                                "name" : "GamebaseAuthGamecenterAdapter"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name" : "purchase",
+            "displayName" : "CATEGORY_PURCHASE_NAME",
+            "description" : "CATEGORY_PURCHASE_DESC",
+            "adapters" : [
+                {
+                    "name": "IapGoogle",
+                    "displayName": "Google Play Store",
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-google"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "IapOnestore",
+                    "displayName": "One Store",
+                    "types" : [
+                        {
+                            "name": "IapOnestoreV17",
+                            "displayName": "V17",
+                            "platforms" : [
+                                {
+                                    "name" : "Android",
+                                    "install" : {
+                                        "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-onestore"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "IapOnestoreV19",
+                            "displayName": "V19",
+                            "extras" : [
+                                {
+                                    "type" : "text",
+                                    "text" : "EXTRA_ONESTORE_V19_TEXT"
+                                },
+                                {
+                                    "type" : "link",
+                                    "text" : "EXTRA_DOWNLOAD_LINK",
+                                    "value" : "https://github.com/ONE-store/onestore_iap_release/tree/iap19-release/android_app_sample/app/libs"
+                                }
+                            ],
+                            "platforms" : [
+                                {
+                                    "name" : "Android",
+                                    "install" : {
+                                        "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-onestore-v19"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "IapOnestoreV21",
+                            "displayName": "V21",
+                            "extras" : [
+                                {
+                                    "platform" : "Android",
+                                    "type" : "check_sdk_version",
+                                    "text" : "EXTRA_MIN_ANDROID_SDK_23_TEXT",
+                                    "value" : "23"
+                                }
+                            ],
+                            "platforms" : [
+                                {
+                                    "name" : "Android",
+                                    "install" : {
+                                        "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-onestore-v21",
+                                        "repositories" : [
+                                            "https://repo.onestore.co.kr/repository/onestore-sdk-public"
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "IapOnestoreExternal",
+                            "displayName": "External",
+                            "platforms" : [
+                                {
+                                    "name" : "Android",
+                                    "install" : {
+                                        "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-onestore-external"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "IapGalaxy",
+                    "displayName": "Galaxy Store",
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-galaxy"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "IapAmazon",
+                    "displayName": "Amazon Store",
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-amazon"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "IapHuawei",
+                    "displayName": "Huawei Store",
+                    "extras" : [
+                        {
+                            "type" : "text",
+                            "text" : "EXTRA_HUAWEI_STORE_TEXT"
+                        },
+                        {
+                            "type" : "link",
+                            "text" : "SETTING_GUIDE",
+                            "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#huawei-store"
+                        },
+                        {
+                            "platform" : "Android",
+                            "type" : "check_android_manifest_meta_data_name",
+                            "value" : "com.huawei.hms.client.appid",
+                            "text" : "MESSAGE_HUAWEI_NEED_CHECK_1"
+                        },
+                        {
+                            "platform" : "Android",
+                            "type" : "check_android_manifest_meta_data_name",
+                            "value" : "com.huawei.hms.client.cpid",
+                            "text" : "MESSAGE_HUAWEI_NEED_CHECK_2"
+                        }
+                    ],
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-huawei",
+                                "repositories" : [
+                                    "https://developer.huawei.com/repo/"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "IapMyCard",
+                    "displayName": "MyCard Store",
+                    "extras" : [
+                        {
+                            "platform" : "Android",
+                            "type" : "text",
+                            "text" : "EXTRA_NEED_ANDROID_MANIFEST_SETTING"
+                        },
+                        {
+                            "type" : "link",
+                            "text" : "SETTING_GUIDE",
+                            "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#mycard"
+                        }
+                    ],
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-purchase-mycard"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "IapAppStore",
+                    "displayName": "App Store",
+                    "platforms" : [
+                        {
+                            "name" : "iOS",
+                            "install" : {
+                                "name" : "GamebasePurchaseIAPAdapter"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name" : "push",
+            "displayName" : "CATEGORY_PUSH_NAME",
+            "description" : "CATEGORY_PUSH_DESC",
+            "adapters" : [
+                {
+                    "name" : "FCM",
+                    "displayName": "FCM",
+                    "extras" : [
+                        {
+                            "type" : "text",
+                            "text" : "EXTRA_FCM_TEXT"
+                        },
+                        {
+                            "type" : "link",
+                            "text" : "SETTING_GUIDE",
+                            "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#firebase-notification"
+                        }
+                    ],
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-push-fcm"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name" : "ADM",
+                    "displayName": "ADM",
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-push-adm"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name" : "APNs",
+                    "displayName": "APNs",
+                    "platforms" : [
+                        {
+                            "name" : "iOS",
+                            "install" : {
+                                "name" : "GamebasePushAdapter"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name" : "addon",
+            "displayName" : "CATEGORY_ADDON_NAME",
+            "description" : "CATEGORY_ADDON_DESC",
+            "adapters": [
+                {
+                    "name": "WebView",
+                    "displayName": "WebView for PC",
+                    "extras" : [
+                        {
+                            "platform" : "macOS",
+                            "type" : "check_unity_version",
+                            "text" : "EXTRA_MACOS_PC_WEBVIEW_NEED_MINVERSION_TEXT",
+                            "value" : "2021.3.35"
+                        }
+                    ],
+                    "platforms": [
+                        {
+                            "name": "Windows",
+                            "install" : {
+                                "dirs": [
+                                    "sdk/gamebase-adapter-etc-webview"
+                                ],
+                                "name": "gamebase-adapter-etc-webview",
+                                "repositories" : [
+                                    "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/refs/heads/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_core.zip",
+                                    "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/refs/heads/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_windows.zip"
+                                ],
+                                "packages" : [
+                                    "sdk/gamebase-adapter-etc-webview"
+                                ]
+                            }
+                        },
+                        {
+                            "name": "macOS",
+                            "minGamebaseVersion" : "2.63.0",
+                            "install" : {
+                                "dirs": [
+                                    "sdk/gamebase-adapter-etc-webview"
+                                ],
+                                "name": "gamebase-adapter-etc-webview",
+                                "repositories" : [
+                                    "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/refs/heads/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_core.zip",
+                                    "https://github.com/smflt-nhn/toast.gamebase.unity.tools.setting-tool/raw/refs/heads/feature/setting_tool_3_test/Gamebase/GamebaseSDK-Unity/gamebase-adapter-etc-webview/v{version}/gamebase-adapter-etc-webview_mac.zip"
+                                ],
+                                "packages" : [
+                                    "sdk/gamebase-adapter-etc-webview"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name" : "GPGSAutoLogin",
+                    "displayName": "GPGS AutoLogin",
+                    "extras" : [
+                        {
+                            "platform" : "Android",
+                            "type" : "check_android_manifest_meta_data_name",
+                            "value" : "com.google.android.gms.games.APP_ID",
+                            "text" : "MESSAGE_GPGSV2_NEED_CHECK"
+                        },
+                        {
+                            "platform" : "Android",
+                            "type" : "link",
+                            "text" : "SETTING_GUIDE",
+                            "value" : "https://docs.nhncloud.com/ko/Game/Gamebase/ko/aos-started/#gpgs-v2-idp"
+                        }
+                    ],
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "minGamebaseVersion" : "2.68.0",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-auth-gpgs-autologin"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name" : "CustomReceiver",
+                    "displayName": "Custom Push Receiver",
+                    "platforms" : [
+                        {
+                            "name" : "Android",
+                            "install" : {
+                                "name" : "com.toast.android.gamebase:gamebase-adapter-push-notification"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
